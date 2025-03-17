@@ -1,6 +1,19 @@
 body{
+    width: 100%;
     color:red;
 }
 h1{
     color:blue;
+}
+#container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(19, [col] 1fr);
+    grid-template-rows: repeat(9, [row] auto);
+    gap: 1px;
+}
+#grid1{
+    grid-column: 1/19;
+    grid-row: 1/9;
+    background-color: lightblue;
 }
