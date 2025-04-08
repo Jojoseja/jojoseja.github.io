@@ -1,0 +1,23 @@
+*{
+    color:#CCCCCC;
+}
+body{
+    width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+header{
+    width: 100%;
+    background-color: #0F2027;
+    display:flex;
+}
+main{
+    width: 100%;
+    background-color: #203A43;
+    display:flex;
+}
+footer{
+    width: 100%;
+    background-color: #2C5364;
+    display:flex;
+}
