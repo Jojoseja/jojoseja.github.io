@@ -13,38 +13,44 @@ header{
 
 }
 main{
-    width: 100%;
     background-color: #203A43;
-    
+    display:grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 50px);
+    gap: 15px 15px;
 }
 footer{
     width: 100%;
     background-color: #2C5364;
     text-align: center;
 }
-#projects{
-    width: auto;
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-
+#project1{
+    grid-column: 3/4;
+    grid-row: 1/11;
+    background: linear-gradient(180deg, #002D62 0%, #00356B 33%, #002147 67%, #1E2952 100%);
 }
-.project-card{
-    width: 50%;
-    display: flex;
-    margin: 2rem 0;
-    margin: auto;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
+#project2{
+    grid-column: 4/5;
+    grid-row: 1/11; 
+    background: linear-gradient(180deg, #0093AF 0%, #007791 33%, #367588 67%, #005f69 100%);
 }
-.project-image{
-    width: 100%;
-
+#project3{
+    grid-column: 5/6;
+    grid-row: 1/11;
+    background: linear-gradient(180deg,  0%,  33%,  67%, 100%);
 }
-.project-info{
-    width: 100%;
-
+#project4{
+    grid-column: 6/7;
+    grid-row: 1/11;
+    background: linear-gradient(180deg,  0%,  33%,  67%, 100%);
+}
+#project5{
+    grid-column: 7/8;
+    grid-row: 1/11;
+    background: linear-gradient(180deg,  0%,  33%,  67%, 100%);
+}
+#project6{
+    grid-column: 8/9;
+    grid-row: 1/11;
+    background: linear-gradient(180deg,  0%,  33%,  67%, 100%);
 }
