@@ -1,4 +1,6 @@
 class gitHubRepo{
-    constructor()
+    constructor() {
+        //PlaceHolder
+    }
 
 }

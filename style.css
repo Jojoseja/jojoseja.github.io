@@ -1,0 +1,17 @@
+*{
+    color:rgb(136, 22, 241);
+    background-color: rgb(26, 26, 29);
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+}
+header a{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+main{
+    display: grid;
+}
