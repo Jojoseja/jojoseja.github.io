@@ -14,4 +14,25 @@ header a{
 
 main{
     display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 100px);
+    gap: 10px
+
+}
+
+.repo-container{
+    display:flex;
+    flex-direction: column;
+}
+
+#clase{
+    background-color: aqua;
+    grid-column: 1 / 4;
+    grid-row: 2 / 8;
+}
+
+#no_clase{
+    background-color: aquamarine;
+    grid-column: 4 / 7;
+    grid-row: 2 / 8;
 }
