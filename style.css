@@ -1,0 +1,27 @@
+body{
+    background-color: #1F1F1F;
+}
+
+header{
+    display:flex;
+    justify-content: center;
+}
+
+main{
+    display:grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+main div{
+    display:flex;
+    justify-content: center;
+}
+
+.repo-container{
+    grid-area: auto;
+}
+
+h1, 
+p{
+    color:white;
+}
