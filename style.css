@@ -8,20 +8,40 @@ header{
 }
 
 main{
-    display:grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
 }
+
 main div{
     display:flex;
     justify-content: center;
 }
 
-.repo-container{
-    grid-area: auto;
+.repo-grid{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-h1, 
-p{
+h1, p{
     color:white;
+}
+
+.clase{
+    display:block;
+}
+
+.hidden{
+    display: none !important;
+    background-color: aqua;
+}
+.repo-card{
+    display: grid;
+    height: 75px;
+    margin: 10px;
+    padding: 5px;
+    border: solid #fff 2px;
+}
+
+.repo-card a{
+    color:#fff;
+    font-size: 16px;
 }
