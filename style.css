@@ -18,7 +18,7 @@ main div{
 
 .repo-grid{
     display:grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
 }
 
 h1, p{
@@ -54,4 +54,18 @@ h1, p{
 .repo-card a{
     color:#fff;
     font-size: 16px;
+}
+
+@media(max-width: 1080px){
+    .repo-grid{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media(max-width: 600px){
+    .repo-grid{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
