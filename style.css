@@ -24,21 +24,31 @@ main div{
 h1, p{
     color:white;
 }
-
-.clase{
-    display:block;
+.main-buscar{
+    justify-content: space-around;
+}
+.main-buscar p{
+    margin-right: 15px;
 }
 
 .hidden{
-    display: none !important;
-    background-color: aqua;
+    display: none;
 }
-.repo-card{
+.hidden-btn{
+    display: none;
+}
+
+.repo-card-box{
     display: grid;
-    height: 75px;
+}
+
+.repo-card{
+    height: 200px;
+    width: 200px;
     margin: 10px;
     padding: 5px;
-    border: solid #fff 2px;
+    /*border: solid #fff 10px;*/
+    box-shadow: 0 0 20px #fff;
 }
 
 .repo-card a{
