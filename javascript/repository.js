@@ -11,6 +11,12 @@ async function loadRepositories(){
     }
 }
 
+function copyTextToClipboard(text) {
+  if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+    return navigator.clipboard.writeText(text);
+  }
+}
+
 function displayRepos(repoList){
     const repoGrid = document.getElementById("repo-grid");
     var repoArray = Array.from(repoList);
@@ -22,15 +28,36 @@ function displayRepos(repoList){
 
         repoCard.className='repo-card';
         repoCard.setAttribute('data-name', element.name);
+
+        const btnId = element.id;
+        const urlHTTPS = element.clone_url;
+        const urlSSH = element.ssh_url;
+
         repoCard.innerHTML=
         `<div class="repo-card-box">
             <div><a href="${element.html_url}">${element.name}</a></div>
-            <div><p>${element.clone_url}</p></div>
+            <div>
+            <button class="btn btn-https" data-url="${urlHTTPS}">Copy URL</button>
+            <button class="btn btn-shh" data-url="${urlSSH}">Copy SSH</button>
+            </div>
         </div>
         `
+
         repoGrid.appendChild(repoCard);
     });
 }
+
+const grid = document.getElementById('repo-grid');
+grid.addEventListener('click', e => {
+    if (e.target.classList.contains("btn")) {
+        const button = e.target;
+        const url = button.dataset.url;
+        copyTextToClipboard(url)
+    }
+})
+
+
+
 export function initRepositories(){
     displayRepos(loadRepositories());
 }
