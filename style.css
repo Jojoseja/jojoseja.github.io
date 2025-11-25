@@ -86,6 +86,7 @@ h1, p{
 }
 .contactos{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .contactos a{
