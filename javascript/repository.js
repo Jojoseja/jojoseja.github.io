@@ -35,8 +35,9 @@ function displayRepos(repoList){
 
         repoCard.innerHTML=
         `<div class="repo-card-box">
-            <div><a href="${element.html_url}">${element.name}</a></div>
-            <div>
+            <div><a href="${element.html_url}">${element.name}</a>
+        </div>
+        <div>
             <button class="btn btn-https" data-url="${urlHTTPS}">Copy URL</button>
             <button class="btn btn-shh" data-url="${urlSSH}">Copy SSH</button>
             </div>
