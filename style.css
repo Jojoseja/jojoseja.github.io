@@ -27,10 +27,22 @@ h1, p{
     color:white;
 }
 .main-buscar{
+    display: flex;
     justify-content: space-around;
+
 }
+
+.main-buscar div{
+    justify-content: center;
+    align-items: center;
+}
+
 .main-buscar p{
     margin-right: 15px;
+}
+
+.main-buscar input{
+    height: 50%;
 }
 
 .hidden{
